@@ -103,12 +103,8 @@ Avg Cholesterol = AVERAGE('Sheet1'[Cholesterol_mg_dL])
 3. Open the `.pbix` file included in the repository root directory.
 4. The dataset is completely self-contained and pre-loaded into the data model—no external database configurations or API keys are required.
 
-```
 
-### 📌 Next Steps for You:
-1. Create a new public repository on GitHub called `clinical-risk-analytics-powerbi`.
-2. Copy and paste the text above into a file named `README.md` in that repository.
-3. Save your Power BI project by going to **File > Save As** and naming it `Medical_Dashboard.pbix`. 
-4. Upload that `.pbix` file directly into your GitHub repository along with your project screenshot (`image_4554dd.png`) to give users a visual preview of your dashboard.
+<img width="878" height="496" alt="image" src="https://github.com/user-attachments/assets/7ab525cc-6c08-4c0c-943d-e354be72ae36" />
 
-```
+<img width="879" height="490" alt="image" src="https://github.com/user-attachments/assets/e8de026e-6463-4ff8-a7a6-e453ef6e94df" />
+
