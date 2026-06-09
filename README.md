@@ -1,7 +1,6 @@
 # Power-BI-Project
 An interactive, high-density Power BI healthcare dashboard mapping cardiovascular and chronic disease risk factors by synthesizing complex demographic and clinical datasets. Features advanced DAX modeling, cohort analysis, and multi-dimensional cross-tabulations.
 
-```markdown
 # Clinical Risk Analytics & Patient Cohort Dashboard
 
 ## 📊 Project Overview
@@ -9,14 +8,13 @@ This repository contains a production-grade **Power BI Enterprise Dashboard** de
 
 Utilizing a comprehensive health dataset containing both high-cardinality categorical attributes and complex continuous clinical vitals, this dashboard delivers granular patient insights to enable data-driven clinical decisions, map chronic disease clusters, and track key risk metrics.
 
----
 
 ## 💡 Key Business & Clinical Insights Delivered
 * **Demographic Escalation:** Identifies exactly how heart disease risk and elevated cholesterol scale against aging cohorts, showing massive data skew in senior demographics (`Senior (55+)`).
 * **Cross-Tab Risk Matrix:** Intersects lifestyle habits (`Smoker Status`) directly against physiological baselines (`Blood Pressure`, `BMI`, `Glucose`) to isolate multi-morbid risk patient cohorts.
 * **Hypertension Distribution:** Maps out operational patient strain across varying tiers of hypertensive categories to assist clinical facilities with predictive resource scheduling.
 
----
+
 
 ## 🛠️ Dashboard Architecture & Layout
 The project is built around a unified, high-density dashboard tracking multiple analytical facets:
@@ -27,7 +25,7 @@ The project is built around a unified, high-density dashboard tracking multiple 
 4. **Lifestyle Threat Radar (Donut & Funnel Charts):** Isolates high-risk populations across smoking profiles and blood pressure funnels to immediately determine patient prioritization.
 5. **Dual-Axis Demographic Trend Chart:** Displays total patient counts by age bracket while simultaneously trending `Avg Cholesterol` lines across a secondary Y-axis to track metabolic anomalies across younger cohorts.
 
----
+
 
 ## 🧪 Data Schema & Features
 The dashboard processes data for **300 unique anonymized patients** across the following schema:
@@ -44,16 +42,17 @@ The dashboard processes data for **300 unique anonymized patients** across the f
 | `Smoker_Status` | Categorical | Behavioral lifestyle index tracking risk multipliers (Never, Former, Current). |
 | `Heart_Disease_Risk` | Categorical (Binary) | Primary objective classification feature (**Yes / No**). |
 
----
 
 ## 🧮 Data Engineering & Custom DAX Measures
 Rather than relying on implicit data models, this project utilizes explicit, highly optimized **Data Analysis Expressions (DAX)** managed inside a dedicated measures table container (`_Measures`):
 
 ### Total Patient Count
+
 ```DAX
 Total Patients = COUNTROWS('Sheet1')
 
 ```
+
 
 ### High Risk Isolation
 
@@ -87,7 +86,7 @@ Avg Cholesterol = AVERAGE('Sheet1'[Cholesterol_mg_dL])
 
 ```
 
----
+
 
 ## ⚡ Technical Implementations & UI/UX Optimizations
 
@@ -95,7 +94,7 @@ Avg Cholesterol = AVERAGE('Sheet1'[Cholesterol_mg_dL])
 * **Visual Color Discipline:** Applied a crisp, corporate UI theme layout leveraging high-contrast color markers (**Coral Red** reserved strictly for risk alerts and **Muted Cobalt Blue** for standard population baselines) to ensure maximum scannability.
 * **Dynamic Cross-Filtering:** Configured mutual cross-filtering parameters across all elements—clicking any specific lifestyle indicator (e.g., *Current Smoker*) completely recalibrates the entire dashboard's visual matrix instantly.
 
----
+
 
 ## 🚀 How to Run the Project
 
@@ -105,8 +104,6 @@ Avg Cholesterol = AVERAGE('Sheet1'[Cholesterol_mg_dL])
 4. The dataset is completely self-contained and pre-loaded into the data model—no external database configurations or API keys are required.
 
 ```
-
----
 
 ### 📌 Next Steps for You:
 1. Create a new public repository on GitHub called `clinical-risk-analytics-powerbi`.
